@@ -23,6 +23,7 @@
     {#if showPlaceType}
       <span class="line2">
         {feature.properties?.place_type_name?.[0] ?? feature.place_type[0]}
+        {feature.properties?.categories?.join(", ") ?? ""}
       </span>
     {/if}
   </span>
